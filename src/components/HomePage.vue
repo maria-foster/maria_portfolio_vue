@@ -11,12 +11,22 @@ maria foster
     border-right: 2px solid white; /* The cursor*/
     font-size: 16px;
     white-space: nowrap; /* Keeps the text on a single line */
-    animation: typing 2s forwards;
+    animation: typing 2s steps(30) forwards, blink 1s infinite;
+
   }
 
-  @keyframes typing {
+@keyframes typing {
   from { width: 0 }
   to { width: 100% }
+}
+
+@keyframes blink {
+  0%, 45% {
+    border-color: transparent;
+  }
+  50%, 100% {
+    border-color: white;
+  }
 }
 
 @media (min-width: 1024px) {}
