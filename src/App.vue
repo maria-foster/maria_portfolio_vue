@@ -5,6 +5,7 @@ import HomePage from './components/HomePage.vue'
 <template>
   <header>
     <div class="wrapper">
+    <HomePage/>
     </div>
   </header>
 
@@ -22,7 +23,6 @@ header {
   header {
     display: flex;
     place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
   }
 
 
